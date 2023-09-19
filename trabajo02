@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Feb 20 15:48:22 2019
+
+@author: tomas
+"""
+
+import math
+
+"""
+Primer trabajo del curso
+Tema 2
+"""
+# Poner aqui el nombre del estudiante autor del trabajo
+NOMBRE_ESTUDIANTE = "Sergio Jimeno"
+
+
+# susituir pass por tu codigo
+def nota(trabajos, parcial1, parcial2):
+    return (trabajos*0.3+parcial1*0.35+parcial2*0.35)
+
+def comprobar_nota():
+    # Esto debe dar 5.0
+    print("Nota (debe dar 5.0) =", nota(5, 5, 5))
+    # Esto debe dar aproximadamente 7.0
+    print("Nota (debe dar 7.0) =", nota(0, 10, 10))
+    # poner mas comprobaciones ...
+
+
+
+# susituir pass por tu codigo
+def area_triangulo(a, b, c):
+    s=1/2*(a+b+c)
+    return (math.sqrt(s*(s-a)*(s-b)*(s-c)))
+
+def comprobar_area_triangulo():
+    # Esto debe dar aproximadamente 0.5
+    print("Area (debe dar 0.5) =", area_triangulo(1, 1, math.sqrt(2)))
+    # Esto debe dar aproximadamente 0.0
+    print("Area (debe dar 0.0) =", area_triangulo(1, 1, 2))
+    # poner mas comprobaciones ...
+
+
+print('## Trabajo 02 de la asignatura de informatica ##')
+print('ESTUDIANTE :', NOMBRE_ESTUDIANTE)
+
+# Ejecutar las comprobaciones
+comprobar_nota()
+comprobar_area_triangulo()
